@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row-reverse text-center lg:text-left justify-center">
       <div
-        className="flex items-center ml-8 min-h-[500px] w-full pt-[70vw] bg-[top_left_2rem]
+        className="flex items-center min-h-[500px] w-full pt-[70vw] bg-[top_left_2rem]
 					bg-[length:100vw] lg:bg-auto md:bg-top lg:bg-right md:bg-[length:50vw]
 					lg:bg-[length:50%] md:pt-[35vw] lg:pt-0 bg-no-repeat 
 					max-w-7xl lg:container"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="mr-8 lg:w-1/2 flex flex-col items-center lg:items-start">
+        <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
           <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl text-veryDarkViolet">
             More than just shorter links
           </h1>
