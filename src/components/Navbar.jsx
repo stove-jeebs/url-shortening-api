@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="my-12 font-bold text-gray">
       {/* desktop navigation */}
-      <section className="hidden md:flex container">
+      <section className="hidden lg:flex container">
         {/* logo and links */}
         <div className="flex flex-1 gap-12">
           <img src={logo} alt="Shortly-logo" />
@@ -44,7 +44,7 @@ export default function Navbar() {
       </section>
 
       {/* mobile navigation */}
-      <section className="container md:hidden relative">
+      <section className="mx-12 lg:hidden relative">
         {/* logo and Hamburger */}
         <div className="flex">
           <img src={logo} alt="Shortly-logo" />
