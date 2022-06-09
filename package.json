@@ -2,7 +2,7 @@
   "name": "url-shortening-api",
   "version": "0.1.0",
   "private": true,
-	"homepage": "https://stove-jeebs.github.io",
+	"homepage": "https://stove-jeebs.github.io/url-shortening-api",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
