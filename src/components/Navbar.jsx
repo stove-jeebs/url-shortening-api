@@ -21,7 +21,7 @@ export default function Navbar() {
       {/* desktop navigation */}
       <section className="hidden lg:flex container">
         {/* logo and links */}
-        <div className="flex flex-1 gap-12">
+        <div className="flex flex-1 gap-12 items-center">
           <img src={logo} alt="Shortly-logo" />
           <ul className="flex gap-8 items-center">
             <List content={"Features"} />
