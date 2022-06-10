@@ -3,10 +3,12 @@ import Card from "./ApiCard";
 import desktopPattern from "../../assets/bg-shorten-desktop.svg";
 
 export default function Api() {
-  const [shortUrl, setShortUrl] = useState("");
+  // states
   const [longUrl, setLongUrl] = useState("");
   const [text, setText] = useState("");
+  const [urlLIst, setUrlList] = useState([]);
 
+  // fetch api data
   useEffect(() => {
     longUrl &&
       fetch("https://api-ssl.bitly.com/v4/shorten", {
@@ -23,14 +25,22 @@ export default function Api() {
       })
         .then((res) => res.json())
         .then((data) => {
-          setShortUrl(data.link);
+          setUrlList((prevList) =>
+            prevList.concat([[data.id, data.long_url, data.link]])
+          );
         });
-  });
+  }, [longUrl]);
 
+  // sets text input to lonUrl
   function onSubmit(e) {
     e.preventDefault();
     setLongUrl(text);
   }
+
+  // Api cards
+  const cards = urlLIst.map((links) => (
+    <Card key={links[0]} longUrl={links[1]} shortUrl={links[2]} />
+  ));
 
   return (
     <div className="container my-40 -translate-y-20">
@@ -38,29 +48,25 @@ export default function Api() {
         onSubmit={onSubmit}
         action="/test"
         className="flex flex-col md:flex-row px-4 md:px-12 py-12 rounded-lg
-				bg-secondary bg-contain gap-6 md:gap-4 bg-cover bg-center"
+					bg-secondary bg-contain gap-6 md:gap-4 bg-cover bg-center"
         style={{ backgroundImage: `url(${desktopPattern})` }}
       >
         <input
           onChange={(e) => setText(e.target.value)}
           type="text"
           className="rounded-xl px-4 py-3 text-xl placeholder:text-grayishViolet text-veryDarkViolet
-					focus:outline-none border-4 border-transparent focus:border-primary flex-1"
+						focus:outline-none border-4 border-transparent focus:border-primary flex-1"
           placeholder="Shorten a link here..."
         />
         <button
           type="submit"
           className="bg-primary text-white hover:bg-primaryHover font-bold text-xl rounded-lg
-		px-12 py-5"
+						px-12 py-5"
         >
           Shorten!
         </button>
       </form>
-      {longUrl && (
-        <div>
-          <Card originalUrl={longUrl} shortenedUrl={shortUrl} />
-        </div>
-      )}
+      {cards}
     </div>
   );
 }
