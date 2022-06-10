@@ -4,7 +4,7 @@ import Api from "./components/api/Api";
 
 function App() {
   return (
-    <div className="text-lg overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <div className="bg-stone">

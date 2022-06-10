@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl text-veryDarkViolet">
             More than just shorter links
           </h1>
-          <p className="text-gray my-8 max-w-md">
+          <p className="text-gray text-xl my-8 max-w-md">
             Build your brand's recognition and get detailed insights on how
             links are performing.
           </p>

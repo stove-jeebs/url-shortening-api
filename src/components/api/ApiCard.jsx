@@ -1,15 +1,19 @@
 import React, { useState } from "react";
+
 export default function ApiCard({ longUrl, shortUrl }) {
   const [copied, setCopied] = useState(false);
+
   return (
     <div
       className="flex flex-col items-center rounded-lg md:flex-row gap-8 my-8 px-6 py-3
 				justify-between bg-white"
     >
+      {/* longUrl */}
       <p className="text-veryDarkViolet text-center">
         {longUrl.length > 70 ? `${longUrl.slice(0, 70)}...` : `${longUrl}`}
       </p>
       <div className="flex flex-col md:flex-row items-center gap-8">
+        {/* shortUrl link */}
         <a
           href={shortUrl}
           className="text-primary mb-4 md:mb-0 hover:text-primaryHover"
@@ -18,6 +22,8 @@ export default function ApiCard({ longUrl, shortUrl }) {
         >
           {shortUrl}
         </a>
+
+        {/* copy button */}
         <button
           onClick={() => {
             navigator.clipboard.writeText(shortUrl);
