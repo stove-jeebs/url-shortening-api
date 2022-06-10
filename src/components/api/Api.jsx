@@ -18,7 +18,7 @@ export default function Api() {
         body: JSON.stringify({
           long_url: `${longUrl}`,
           domain: "bit.ly",
-          group_guid: "Bm679IhA92K",
+          group_guid: `${process.env.REACT_APP_BITLY_GROUP_GUID}`,
         }),
       })
         .then((res) => res.json())
