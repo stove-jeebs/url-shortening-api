@@ -24,6 +24,7 @@ module.exports = {
         veryDarkViolet: "hsl(260, 8%, 14%)",
         warning: "hsl(0, 87%, 67%)", // red
         gray: "hsl(0, 0%, 75%)",
+        stone: "#eef0f6",
       },
     },
   },

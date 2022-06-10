@@ -1,13 +1,15 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Shorten from "./components/shorten/Shorten";
+import Api from "./components/api/Api";
 
 function App() {
   return (
     <div className="text-lg overflow-x-hidden">
       <Navbar />
       <Hero />
-      <Shorten />
+      <div className="bg-stone">
+        <Api />
+      </div>
     </div>
   );
 }
