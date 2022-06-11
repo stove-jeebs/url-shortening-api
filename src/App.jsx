@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Api from "./components/api/Api";
+import Info from "./components/info/Info.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <div className="bg-stone">
         <Api />
+        <Info />
       </div>
     </div>
   );

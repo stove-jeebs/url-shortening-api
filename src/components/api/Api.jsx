@@ -64,7 +64,7 @@ export default function Api() {
   ));
 
   return (
-    <div className="container my-40 -translate-y-20">
+    <section className="container my-40 -translate-y-20">
       <form
         onSubmit={onSubmit}
         action="/#"
@@ -89,9 +89,9 @@ export default function Api() {
             type="text"
             className={`${
               isValid
-                ? "border-transparent text-veryDarkViolet focus:border-primary"
-                : "border-warning text-warning focus:border-warning"
-            } rounded-xl px-4 py-3 text-xl placeholder:text-grayishViolet
+                ? "border-transparent text-veryDarkViolet focus:border-primary placeholder:text-grayishViolet"
+                : "border-warning text-warning focus:border-warning placeholder:text-warning"
+            } rounded-xl px-4 py-3 text-xl
 						focus:outline-none border-[3px] flex-1`}
             placeholder="Shorten a link here..."
           />
@@ -108,6 +108,6 @@ export default function Api() {
 
       {/* Api cards */}
       {cards}
-    </div>
+    </section>
   );
 }

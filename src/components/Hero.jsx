@@ -2,7 +2,7 @@ import heroImage from "../assets/illustration-working.svg";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row-reverse text-center lg:text-left justify-center">
+    <section className="flex flex-col md:flex-row-reverse text-center lg:text-left justify-center">
       <div
         className="flex items-center min-h-[500px] w-full pt-[70vw] bg-[top_left_2rem]
 					bg-[length:100vw] lg:bg-auto md:bg-top lg:bg-right md:bg-[length:50vw]
@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl text-veryDarkViolet">
             More than just shorter links
           </h1>
-          <p className="text-gray text-xl my-8 max-w-md">
+          <p className="text-grayishViolet text-xl my-8 max-w-md">
             Build your brand's recognition and get detailed insights on how
             links are performing.
           </p>
@@ -26,6 +26,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
