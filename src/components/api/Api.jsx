@@ -42,7 +42,7 @@ export default function Api() {
   // sets text input to lonUrl
   function onSubmit(e) {
     e.preventDefault();
-    setLongUrl(text);
+    text.length > 0 ? setLongUrl(text) : setIsValid(false);
   }
 
   function isValidHttpUrl(str) {
@@ -70,7 +70,11 @@ export default function Api() {
         action="/#"
         className={`${
           !isValid &&
-          "after:content-['Please_add_a_valid_link'] after:text-warning after:italic after:absolute"
+          `${
+            text
+              ? "after:content-['Please_add_a_valid_link']"
+              : "after:content-['Please_add_a_link']"
+          }  after:text-warning after:italic after:absolute`
         } px-4 md:px-12 py-12 rounded-lg
 					bg-secondary bg-contain bg-cover bg-center`}
         style={{ backgroundImage: `url(${desktopPattern})` }}
