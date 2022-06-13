@@ -17,8 +17,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "hsl(180, 66%, 49%)", // cyan
-        primaryHover: "#9be3e2", // light cyan
+        primary: "#64cccf", // cyan
+        primaryHover: "hsl(180, 66%, 49%)", // light cyan
         secondary: "hsl(257, 27%, 26%)", // dark violet
         grayishViolet: "hsl(257, 7%, 63%)",
         veryDarkViolet: "hsl(260, 8%, 14%)",
