@@ -6,7 +6,7 @@ export default function Hero() {
       <div
         className="flex items-center min-h-[500px] w-full pt-[70vw] bg-[top_left_2rem]
 					bg-[length:100vw] lg:bg-auto md:bg-top lg:bg-right md:bg-[length:50vw]
-					lg:bg-[length:50%] md:pt-[35vw] lg:pt-0 bg-no-repeat 
+					 md:pt-[35vw] lg:pt-0 bg-no-repeat 
 					max-w-7xl"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
@@ -15,7 +15,7 @@ export default function Hero() {
             More than just shorter links
           </h1>
           <p className="max-w-md my-8 text-xl text-grayishViolet">
-            Build your brand's recognition and get detailed insights on how
+            Build your brand&apos;s recognition and get detailed insights on how
             links are performing.
           </p>
           <button

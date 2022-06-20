@@ -38,7 +38,7 @@ export default function Shorten() {
         onSubmit={onSubmit}
         action="/test"
         className="flex flex-col md:flex-row px-4 md:px-12 py-12 rounded-lg
-				bg-secondary bg-contain gap-6 md:gap-4 bg-cover bg-center"
+				bg-secondary gap-6 md:gap-4 bg-cover bg-center"
         style={{ backgroundImage: `url(${desktopPattern})` }}
       >
         <input

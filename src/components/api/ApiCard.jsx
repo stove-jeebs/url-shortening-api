@@ -4,9 +4,7 @@ export default function ApiCard({ longUrl, shortUrl }) {
   const [copied, setCopied] = useState(false);
 
   return (
-    <div
-      className="flex flex-col justify-between py-3 my-8 text-xl bg-white rounded-lg md:items-center md:flex-row gap-4"
-    >
+    <div className="flex flex-col justify-between py-3 my-8 text-xl bg-white rounded-lg md:items-center md:flex-row gap-4">
       {/* longUrl */}
       <p className="px-6 pb-4 border-b md:pb-0 text-veryDarkViolet border-gray md:border-none">
         {longUrl.length > 45 ? `${longUrl.slice(0, 45)}...` : `${longUrl}`}
