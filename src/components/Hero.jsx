@@ -1,3 +1,4 @@
+import Button from "./GetStartedButton";
 import heroImage from "../assets/illustration-working.svg";
 
 export default function Hero() {
@@ -18,13 +19,7 @@ export default function Hero() {
             Build your brand&apos;s recognition and get detailed insights on how
             links are performing.
           </p>
-          <button
-            type="button"
-            className="px-10 py-4 text-xl font-bold text-white rounded-full bg-primary
-				hover:bg-primaryHover"
-          >
-            Get Started
-          </button>
+          <Button />
         </div>
       </div>
     </section>
