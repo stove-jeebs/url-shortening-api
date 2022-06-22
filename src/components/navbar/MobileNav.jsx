@@ -16,7 +16,7 @@ export default function MobileNav() {
           onClick={() => setIsOpen((prevState) => !prevState)}
           className="flex flex-col gap-1 ml-auto justify-center cursor-pointer"
         >
-          {Hamburger}
+          <Hamburger />
         </div>
       </div>
 

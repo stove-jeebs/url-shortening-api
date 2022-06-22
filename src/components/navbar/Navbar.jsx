@@ -24,7 +24,7 @@ export default function Navbar() {
           </ul>
         </div>
         {/* buttons */}
-        <div className="">
+        <div>
           <button
             type="button"
             className="font-bold mr-8 hover:text-secondary ease-in-out duration-100"

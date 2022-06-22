@@ -1,7 +1,7 @@
 export default function MobileMenu() {
   return (
     // container panel
-    <div className="w-4/5 max-w-md fixed left-1/2 -translate-x-1/2 bg-secondary rounded-xl text-xl my-8 py-10">
+    <div className="w-[80vw] max-w-md absolute left-1/2 -translate-x-1/2 bg-secondary rounded-xl text-xl my-8 py-10">
       <div className="flex flex-col w-4/5 text-white mx-auto text-center">
         {/* mobile links */}
         <div className="w-full">

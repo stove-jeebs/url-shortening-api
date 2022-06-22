@@ -8,8 +8,8 @@ export default function Footer() {
     return <FooterList key={item["id"]} {...item} />;
   });
   return (
-    <footer className="bg-veryDarkViolet py-10">
-      <div className="container flex items-center md:items-start text-center flex-col md:flex-row gap-8 md:gap-28">
+    <footer className="bg-veryDarkViolet py-20">
+      <div className="container flex items-center md:items-start text-center md:text-left flex-col md:flex-row gap-8 md:gap-36">
         <div className="flex-1">
           <img src={logo} />
         </div>
