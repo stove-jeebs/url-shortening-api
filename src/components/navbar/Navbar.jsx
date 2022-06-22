@@ -4,7 +4,9 @@ import logo from "../../assets/logo.svg";
 export default function Navbar() {
   const List = ({ content }) => {
     return (
-      <li className="cursor-pointer hover:text-secondary h-fit">{content}</li>
+      <li className="cursor-pointer h-fit hover:text-secondary ease-in-out duration-100">
+        {content}
+      </li>
     );
   };
 
@@ -23,12 +25,15 @@ export default function Navbar() {
         </div>
         {/* buttons */}
         <div className="">
-          <button type="button" className="font-bold mr-8 hover:text-secondary">
+          <button
+            type="button"
+            className="font-bold mr-8 hover:text-secondary ease-in-out duration-100"
+          >
             Login
           </button>
           <button
             type="button"
-            className="bg-primary rounded-full text-white px-8 py-3 font-bold hover:bg-primaryHover"
+            className="bg-primary rounded-full text-white px-8 py-3 font-bold hover:bg-primaryHover ease-in-out duration-100"
           >
             Sign Up
           </button>

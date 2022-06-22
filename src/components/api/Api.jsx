@@ -99,7 +99,7 @@ export default function Api() {
           <button
             type="submit"
             className="bg-primary text-white hover:bg-primaryHover font-bold text-xl rounded-lg
-						px-12 py-5"
+						px-12 py-5 ease-in-out duration-100"
           >
             Shorten!
           </button>
